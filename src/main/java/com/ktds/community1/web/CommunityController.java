@@ -27,7 +27,7 @@ import com.ktds.community1.vo.CommunityVO;
 import com.ktds.member.constants.Member;
 import com.ktds.member.vo.MemberVO;
 
-@Controller
+@Controller 
 public class CommunityController {
 	
 	private CommunityService communityService;
