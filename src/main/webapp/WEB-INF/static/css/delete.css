@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*progress, active, box*/
+
+#progress {
+	border-radius: 15px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#progress ul{
+	padding: 0px;
+	margin:0px;
+}
+
+#progress li {
+	display: inline-block;	
+	padding: 15px;
+	border-right: 1px solid #ddd;
+}
+
+#progress li:last-child {
+	border-right: none;
+}
+
+#progress li.active {
+	background-color:#077aff;
+	color: #fff;
+	font-weight:bold;
+}
+
+
+.box {
+	padding: 20px;
+	background-color: #F3F3F3;
+}
+
+#myCommunities {
+	cursor: pointer;
+}
+
+#myCommunities:HOVER {
+	text-decoration: underline;
+}

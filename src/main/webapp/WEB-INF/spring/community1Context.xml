@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		
+	<bean	id="communityDaoOracle"
+			class="com.ktds.community1.dao.CommunityDaoImplForOracle">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</bean>
+	
+	<!-- ref에 이제 communityDao -> communityDaoOracle로 변경해서 db에서 가져오게 사용한다. -->
+	<bean id = "communityService" class = "com.ktds.community1.service.CommunityServiceImpl">
+		<property name="communityDao" ref = "communityDaoOracle"/>
+	</bean>
+
+</beans>
